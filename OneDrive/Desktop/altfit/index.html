@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ALTFiT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2>ALTFiT</h2>
+  <nav>
+    <a href="#men">Men</a>
+    <a href="#women">Women</a>
+    <a href="#featured">Featured</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <div class="cart" onclick="openCart()">
+    👜 <span id="cart-count">0</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Redefining Style</h1>
+    <button onclick="scrollToSection('featured')">Shop Now</button>
+  </div>
+</section>
+
+<section class="section" id="men">
+  <h2>Men's Collection</h2>
+  <div class="grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+      <h4>Denim Jacket</h4>
+      <p>₹4999</p>
+      <button onclick="addToCart('Denim Jacket',4999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://th.bing.com/th/id/OIP.2fQIsDZbzw12eaKt5KE4XgHaL2?w=197&h=316&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1">
+      <h4>Casual Shirt</h4>
+      <p>₹2999</p>
+      <button onclick="addToCart('Casual Shirt',2999)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="section gray" id="women">
+  <h2>Women's Collection</h2>
+  <div class="grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+      <h4>Elegant Dress</h4>
+      <p>₹5999</p>
+      <button onclick="addToCart('Elegant Dress',5999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://th.bing.com/th/id/OIP.7uRY6DcHvMJfAZZtYtguwwHaHa?w=182&h=182&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1">
+      <h4>Bra</h4>
+      <p>₹2499</p>
+      <button onclick="addToCart('Blouse',2499)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="featured">
+  <h2>Featured</h2>
+  <div class="grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+      <h4>Minimal Watch</h4>
+      <p>₹7999</p>
+      <button onclick="addToCart('Minimal Watch',7999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f">
+      <h4>Sunglasses</h4>
+      <p>₹2199</p>
+      <button onclick="addToCart('Sunglasses',2199)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 ALTFiT | Mumbai, India
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
